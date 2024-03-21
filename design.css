@@ -1,0 +1,99 @@
+
+.border{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    border-radius: 10px;
+    border: solid rgb(87, 20, 105);
+    backdrop-filter: blur(5px);
+    border-width: 2px;
+    width: 500px;
+    height: 150px;
+}
+.Socmed {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 100%; Take full width
+    height: 100%; Take full height */
+}
+.Socmed a {
+    color: rgb(130, 67, 188);
+    border-radius: 50%;
+    text-decoration: none;
+    border-color: rgb(173, 75, 168);
+    text-align: center;
+    font-size: 30px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    margin: 5px;
+    background-color: transparent;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}  
+
+body {
+    background-image: url(pexel.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-color: rgb(94, 38, 66);
+    background-blend-mode: hard-light;
+    background-repeat: no-repeat;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+ .Socmed a:hover {
+    opacity: 0.7;
+    transform: translateY(-5px);
+}
+.image img{
+    position:absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+.animation {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes example {
+    0%   {background-color:rgb(70, 11, 94); left: -350px; top: -200px;}
+    25%  {background-color:rgb(99, 28, 127); left:350px; top:-200px;}
+    50%  {background-color:rgb(135, 54, 168); left:350px; top:230px;}
+    75%  {background-color:rgb(166, 87, 197); left:-350px; top:230px;}
+    100% {background-color:rgb(200, 136, 225); left:-350px; top:-200px;}
+  }
+  .animation-clockwise {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    background-color: blue;
+    position: relative;
+    animation-name: example-clockwise;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+ @keyframes example-clockwise {
+        0%   {background-color:rgb(200, 136, 225); left: -350px; top: -200px;}
+        25%  {background-color:rgb(166, 87, 197); left:-350px; top:230px;}
+        50%  {background-color:rgb(135, 54, 168); left:350px; top:230px;}
+        75%  {background-color:rgb(99, 28, 127); left:350px; top:-200px;}
+        100% {background-color:rgb(70, 11, 94); left:-350px; top:-200px;}
+    }
